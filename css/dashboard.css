@@ -18,13 +18,14 @@
 }
 
 body {
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   overflow-x: hidden;
 }
 
 .container {
   position: relative;
   width: 100%;
+  z-index: 990;
 }
 
 /* =============== Navigation ================ */
@@ -451,14 +452,15 @@ body {
   .navigation {
     width: 100%;
     left: -100%;
-    z-index: 1000;
+    z-index: 990;
   }
   .navigation.active {
     width: 100%;
     left: 0;
   }
   .toggle {
-    z-index: 10001;
+    z-index: 90;
+    background-color: #f00;
   }
   .main.active .toggle {
     color: #fff;
